@@ -1,9 +1,8 @@
-import {Outlet,Link, useLocation, NavLink} from 'react-router-dom'
+import {Outlet,Link, useLocation} from 'react-router-dom'
 
 const Layout = () => {
   const location=useLocation();
 
-  console.log(location)
 
   return (
     <div className='md:flex md:min-h-screen'>
