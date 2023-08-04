@@ -1,4 +1,4 @@
-import {Outlet,Link, useLocation} from 'react-router-dom'
+import {Outlet,Link, useLocation, NavLink} from 'react-router-dom'
 
 const Layout = () => {
   const location=useLocation();
@@ -10,9 +10,10 @@ const Layout = () => {
             <h2 className='text-4xl text-white font-black text-center'>CRM clientes</h2>
 
             <nav className='mt-10 '>
-                <Link className={`${location.pathname==="/"?'text-blue-300':'text-white'} text-2xl block mt-2 hover:text-blue-300 text-white`} to="/">Clientes</Link>
-                <Link className={`${location.pathname==="/clientes/nuevo"?'text-blue-300':'text-white'} text-2xl block mt-2 hover:text-blue-300 text-white`} to="/clientes/nuevo">Nuevos clientes</Link>
-                {/* <NavLink className={({isActive})=>isActive?'text-blue-300 text-2xl block mt-2':'text-white text-2xl block mt-2'} to={'/clientes/nuevo'}>Nuevo cliente</NavLink> */}
+                {/* <Link className={`${location.pathname==="/"?'text-blue-300':'text-white'} text-2xl block mt-2 hover:text-blue-300 text-white`} to="/">Clientes</Link>
+                <Link className={`${location.pathname==="/clientes/nuevo"?'text-blue-300':'text-white'} text-2xl block mt-2 hover:text-blue-300 text-white`} to="/clientes/nuevo">Nuevos clientes</Link> */}
+                <NavLink className={({isActive})=>isActive?'text-blue-300 text-2xl block mt-2':'text-white text-2xl block mt-2 hover:text-blue-300'} to={'/'}>Clientes</NavLink> 
+                 <NavLink className={({isActive})=>isActive?'text-blue-300 text-2xl block mt-2':'text-white text-2xl block mt-2 hover:text-blue-300'} to={'/clientes/nuevo'}>Nuevo cliente</NavLink> 
             </nav>
             
         </aside>

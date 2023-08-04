@@ -1,0 +1,64 @@
+{
+  "clientes": [
+    {
+      "nombre": "Juan actualizado",
+      "empresa": "Codigo Con Juan",
+      "email": "juan@juan.com",
+      "telefono": "102013313",
+      "notas": "Nueva",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Karen",
+      "telefono": 138198313,
+      "email": "karen@juan.com",
+      "empresa": "Codigo Con Juan"
+    },
+    {
+      "id": 3,
+      "nombre": "Josue",
+      "telefono": 31983913,
+      "email": "josue@juan.com",
+      "empresa": "Codigo Con Juan"
+    },
+    {
+      "id": 4,
+      "nombre": "Miguel",
+      "telefono": 319381983,
+      "email": "miguel@juan.com",
+      "empresa": "Codigo Con Juan"
+    },
+    {
+      "id": 5,
+      "nombre": "Pedro",
+      "telefono": 1398198938,
+      "email": "pedro@juan.com",
+      "empresa": "Codigo Con Juan"
+    },
+    {
+      "nombre": "Mario",
+      "empresa": "Mario's",
+      "email": "marrevillaga03@gmail.com",
+      "telefono": "76161485",
+      "notas": "1315",
+      "id": 6
+    },
+    {
+      "nombre": "Mario",
+      "empresa": "Mario's",
+      "email": "marrevillaga03@gmail.com",
+      "telefono": "76161485",
+      "notas": "holilla",
+      "id": 7
+    },
+    {
+      "nombre": "Mario Nelson",
+      "empresa": "Mario's",
+      "email": "marrevillaga03@gmail.com",
+      "telefono": "76161485",
+      "notas": "Traer casco",
+      "id": 8
+    }
+  ]
+}
