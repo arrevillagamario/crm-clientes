@@ -73,3 +73,21 @@ export async function reloadCliente(id,datos){
         console.log(error.message)
     }
 }
+
+export async function eliminarCliente(id){
+     //Abrimos un try catch en caso de error al añadir
+     try {
+        
+        //Aqui debemos colocar templates strings ya que debemos de colocar el id en la ruta y en vez de colocar el metodo post que es para añadir colocamos el metodo put que es para editar
+         const respuesta= await fetch(`${import.meta.env.VITE_API_URL}/${id}`,
+         //En este caso el comando http que se debe de utilizar es el de delete para poder borrar ese id
+             { method: 'DELETE'
+             })
+ 
+         //Con esta sintaxis ejecutamos la peticion
+         await respuesta.json()
+         
+     } catch (error) {
+         console.log(error.message)
+     }
+}

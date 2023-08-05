@@ -37,28 +37,12 @@
       "empresa": "Codigo Con Juan"
     },
     {
-      "nombre": "Mario",
+      "nombre": "Mario Nelson",
       "empresa": "Mario's",
       "email": "marrevillaga03@gmail.com",
       "telefono": "76161485",
       "notas": "1315",
       "id": 6
-    },
-    {
-      "nombre": "Mario",
-      "empresa": "Mario's",
-      "email": "marrevillaga03@gmail.com",
-      "telefono": "76161485",
-      "notas": "holilla",
-      "id": 7
-    },
-    {
-      "nombre": "Mario Nelson",
-      "empresa": "Mario's",
-      "email": "marrevillaga03@gmail.com",
-      "telefono": "76161485",
-      "notas": "Traer casco",
-      "id": 8
     }
   ]
 }

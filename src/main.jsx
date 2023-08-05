@@ -10,7 +10,7 @@ import Index, {loader as clientesLoader} from './pages/Index'
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import ErrorPage from './components/ErrorPage'
 import Editar,{loader as editarLoader, action as editarAction} from './pages/Editar'
-import Eliminar from './components/Eliminar'
+import {action as actionEliminarCliente} from './components/Cliente'
 
 //Aqui se crean las rutas a las que se redigiran las distintas paginas que se han creado
 const router= createBrowserRouter([  
@@ -46,9 +46,9 @@ const router= createBrowserRouter([
         errorElement: <ErrorPage></ErrorPage>
       },
       {
-        path:'/clientes/:clienteId/editar',
-        element:<Eliminar></Eliminar>,
-        errorElement:<ErrorPage></ErrorPage>
+        path:'/clientes/:clienteId/eliminar',
+        errorElement:<ErrorPage></ErrorPage>,
+        action: actionEliminarCliente
       }
     ]
   }
